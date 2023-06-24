@@ -28,7 +28,7 @@
 4. 添加头文件路径<br>
 
 <div align=left>
-<img src="./images/HeadFilePath.png" alt="示例图片" title="这也很简单的啦" style="zoom:60%;" />
+<img src="./USBDevevoperGuide/images/HeadFilePath.png" alt="示例图片" title="这也很简单的啦" style="zoom:60%;" />
 
 ## 具体代码实现
 
@@ -37,7 +37,7 @@
 在初始化的 **.c** 文件中，包含如下的头文件：
 
 <div align=left>
-<img src="./images/include_init.png" alt="main.h" title="这是硬件使能层面，放Hardware比较合适" style="zoom:70%;" /><br>
+<img src="./USBDevevoperGuide/images/include_init.png" alt="main.h" title="这是硬件使能层面，放Hardware比较合适" style="zoom:70%;" /><br>
 在调用USB收发功能的 **.c** 文件中，使用 **#include "usbd_usr.h"**
 
 
@@ -47,7 +47,7 @@
 
 添加USB初始化函数，如下图：
 
-<div align=left><img src="./images/start_task.png" alt="start_task.c" title="注意细节" style="zoom:40%;" /><br>
+<div align=left><img src="./USBDevevoperGuide/images/start_task.png" alt="start_task.c" title="注意细节" style="zoom:40%;" /><br>
 
 > 注意事项：
 >
@@ -62,7 +62,7 @@
 我们需要将LED4作为USB连接状态的指示灯，方便调试时查看<br>
 
 <div align=left>
-<img src="./images/Tx2_task.png" alt="在Tx2原有基础上改的，整体差别不大" title="..." style="zoom:50%;" />
+<img src="./USBDevevoperGuide/images/Tx2_task.png" alt="在Tx2原有基础上改的，整体差别不大" title="..." style="zoom:50%;" />
 
 > 该函数的下半是数据发送部分，包含了crc8校验，若不需要，可自行删除
 >
@@ -71,7 +71,7 @@
 **bDeviceState** 被调用在 **usbd_usr.c** 中<br>
 
 <div align=left>
-<img src="./images/USB_situation.png" alt="封装了一些小函数，方便状态查看" title="小函数就是好用" style="zoom:50%;" />
+<img src="./USBDevevoperGuide/images/USB_situation.png" alt="封装了一些小函数，方便状态查看" title="小函数就是好用" style="zoom:50%;" />
 
 > printf调用了串口1的putc函数，因此最好先初始化USART1<br>
 >
@@ -84,7 +84,7 @@
 4. 改写接收回调函数<br>
 
 <div align=left>
-<img src="./images/USB_Rx.png" alt="这个也是回调函数" title="和视觉做通信协议的同步" style="zoom:50%;" />
+<img src="./USBDevevoperGuide/images/USB_Rx.png" alt="这个也是回调函数" title="和视觉做通信协议的同步" style="zoom:50%;" />
 
 > 整体上和串口接收没什么区别，这里只有帧头帧尾校验，没用到crc8，如有需要请自行添加<br>
 >
@@ -98,7 +98,7 @@
 
    > 附视觉代码（我改的粗糙代码，至少通信上了，如有不满，轻喷）：
    >
-   > [粗糙的测试程序](.\Program\VisionTest.zip)
+   > [粗糙的测试程序](./USBDevevoperGuide/Program/VisionTest.zip)
    >
    > 尚未实现热插拔，需要加其他库
    >
@@ -124,4 +124,4 @@
 
 6. 附电控步兵的使用实例
 
-   > [涉及到修改的文件](.\Program\Public.zip)
+   > [涉及到修改的文件](./USBDevevoperGuide/Program/Public.zip)
