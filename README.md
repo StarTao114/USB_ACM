@@ -8,12 +8,12 @@
 > 如果觉得有用，请为我点亮Star！！！！
 
 1. 将USB文件夹整个放入工程中（与USER文件夹同级）<br>
-    <img src="./images/PacketPath.png" alt="移植包放置路径" title="这一步没问题吧" style="zoom:50%;" />
+    <img src="./USBDevevoperGuide/images/PacketPath.png" alt="移植包放置路径" title="这一步没问题吧" style="zoom:50%;" />
 
     <HR style="FILTER:alpha(opacity=100,finishopacity=0,style=3)" width="80%"color=#987cb9 SIZE=3>
 
 2. 在工程中添加三个新的文件夹，并分别填入对应文件<br>
-    <div align=left><img src="./images/FileStructure.png" alt="移植文件结构" title="这一步也很简单" style="zoom:50%;" /><br>
+    <div align=left><img src="./USBDevevoperGuide/images/FileStructure.png" alt="移植文件结构" title="这一步也很简单" style="zoom:50%;" /><br>
 
     <HR style="FILTER:alpha(opacity=100,finishopacity=0,style=3)" width="80%"color=#987cb9 SIZE=3>
 
