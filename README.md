@@ -6,10 +6,14 @@
 >
 > 如果觉得有用，请为我点亮Star！！！！
 
-### Preface
+### Preface<br>
 
-    I have used serial port communication for about one year, and met so many problems what will be happened anywhere, <br>like chip welding problems, internal wiring problems, communication frequency problems and so on. Those problems haunt me for a <br>long time and drive me to solect a more advanced form of communication--USB. But each time when I want to transplant USB programs <br>packaged by ST will produce lots of bugs until recently. So to keep you from doing what I did, I open the entire porting scheme.<br>
-    Promote the spirit of open source.
+    I have used serial port communication for about one year, and met so many problems what will be happened anywhere, <br>
+like chip welding problems, internal wiring problems, communication frequency problems and so on. Those problems haunt me <br>
+for a long time and drive me to solect a more advanced form of communication--USB. But each time when I want to transplant <br>
+USB programs packaged by ST will produce lots of bugs until recently. So to keep you from doing what I did, I open the entire <br>
+porting scheme.<br>
+    Promote the spirit of open source.<br>
 
 ## 文件移植&工程构成<br>
 
