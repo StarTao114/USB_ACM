@@ -92,6 +92,13 @@
 >
 > e.g. #define MINIPC_FRAME_LENGTH		14u				//与视觉约定的包长度<br>
 
+5. 改写接收函数<br>
+
+<div align=left>
+<img src="./USBDevevoperGuide/images/Seng2Host.png" alt="用法和串口发送函数一样" title="应该没有问题" style="zoom:50%;" />
+
+> 使用USB库封装的VCP_DataTx()函数，通过USB虚拟虚拟串口向上位机发送数据<br>
+
 ## 实际效果
 
 1. 视觉那边不需要再选择波特率，但是识别出的端口从ttyUSBx变成了ttyACMx，需要在open文件时修改名称
