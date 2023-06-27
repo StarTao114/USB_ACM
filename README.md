@@ -95,7 +95,7 @@
 5. 改写接收函数<br>
 
 <div align=left>
-<img src="./USBDevevoperGuide/images/Seng2Host.png" alt="用法和串口发送函数一样" title="应该没有问题" style="zoom:50%;" />
+<img src="./USBDevevoperGuide/images/Send2Host.png" alt="用法和串口发送函数一样" title="应该没有问题" style="zoom:50%;" />
 
 > 使用USB库封装的VCP_DataTx()函数，通过USB虚拟虚拟串口向上位机发送数据<br>
 
