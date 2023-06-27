@@ -99,7 +99,7 @@
 
 > 使用USB库封装的VCP_DataTx()函数，通过USB虚拟虚拟串口向上位机发送数据<br>
 > VCP_DataTx()内调用了宏APP_RX_DATA_SIZE，用于控制发送缓冲区的大小<br>
-> 还有一个函数usb_printf()可以一次性发送一整个包，但考虑到数据收发的灵活性，暂不予调用<br>
+> 还有一个函数usb_printf()，也可以一次性发送一整个包，但是这里用Send_to_PC()取代了该函数，暂不调用usb_printf()<br>
 
 ## 实际效果
 
