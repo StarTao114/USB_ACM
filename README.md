@@ -1,11 +1,17 @@
 # USB虚拟串口移植————基于STM32 & FreeRTOS
-## 文件移植&工程构成<br>
 
 > https://github.com/StarTao114/USB_ACM
 >
 > 这是这份程序的仓库，可以在上面下载源代码，也可以在github上与我进行讨论
 >
 > 如果觉得有用，请为我点亮Star！！！！
+
+### Preface
+
+    I have used serial port communication for about one year, and met so many problems what will be happened anywhere, like chip welding problems, internal wiring problems, communication frequency problems and so on. Those problems haunt me for a long time and drive me to solect a more advanced form of communication--USB. But each time when I want to transplant USB programs packaged by ST will produce lots of bugs until recently. So to keep you from doing what I did, I open the entire porting scheme.
+    Promote the spirit of open source.
+
+## 文件移植&工程构成<br>
 
 1. 将USB文件夹整个放入工程中（与USER文件夹同级）<br>
     <img src="./USBDevevoperGuide/images/PacketPath.png" alt="移植包放置路径" title="这一步没问题吧" style="zoom:50%;" />
