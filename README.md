@@ -8,7 +8,7 @@
 
 ### Preface
 
-    I have used serial port communication for about one year, and met so many problems what will be happened anywhere, like chip welding problems, internal wiring problems, communication frequency problems and so on. Those problems haunt me for a long time and drive me to solect a more advanced form of communication--USB. But each time when I want to transplant USB programs packaged by ST will produce lots of bugs until recently. So to keep you from doing what I did, I open the entire porting scheme.
+    I have used serial port communication for about one year, and met so many problems what will be happened anywhere, <br>like chip welding problems, internal wiring problems, communication frequency problems and so on. Those problems haunt me for a <br>long time and drive me to solect a more advanced form of communication--USB. But each time when I want to transplant USB programs <br>packaged by ST will produce lots of bugs until recently. So to keep you from doing what I did, I open the entire porting scheme.<br>
     Promote the spirit of open source.
 
 ## 文件移植&工程构成<br>
